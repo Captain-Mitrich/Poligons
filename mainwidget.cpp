@@ -39,7 +39,7 @@ void MainWidget::paintEvent(QPaintEvent*)
   if (p2.x() >= 0 && p2 != p1)
   {
     drawLine(painter);
-    p1 = p2;
+    p1 = p2 = {-1, -1};
   }
   else
     drawPoint(p1, painter);
