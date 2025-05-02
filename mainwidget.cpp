@@ -27,18 +27,11 @@ void MainWidget::paintEvent(QPaintEvent*)
 {
   QPainter painter(this);
 
-  for (int x = cell_size; ; x += cell_size)
-  {
-    if (x >= width())
-      break;
+  //Рисуем сетку
+  for (int x = cell_size; x < width(); x += cell_size)
     painter.drawLine(x, 0, x, height());
-  }
-  for (int y = cell_size; ; y += cell_size)
-  {
-    if (y >= height())
-      break;
+  for (int y = cell_size; y < height(); y += cell_size)
     painter.drawLine(0, y, width(), y);
-  }
 
   if (p1.x() < 0)
     return;
