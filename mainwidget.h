@@ -17,7 +17,7 @@ protected:
   //Прямая линия от p1 до p2 включительно
   void drawLine(QPainter& painter);
 
-  void drawPoint(const QPoint& p, QPainter& painter);
+  static void drawPoint(const QPoint& p, QPainter& painter);
 
 private:
   QPoint p1{-1, -1}, p2{-1, -1};

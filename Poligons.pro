@@ -13,6 +13,7 @@ SOURCES += \
     mainwidget.cpp
 
 HEADERS += \
+    line_points.h \
     mainwidget.h
 
 # Default rules for deployment.
